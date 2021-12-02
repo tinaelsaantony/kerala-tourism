@@ -37,9 +37,23 @@
                 <a class="nav-link" href="signup.html">Signup</a>
               </li>
             </ul>
-            <form class="d-flex">
-              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-              <button class="btn btn-outline-success" type="submit">Search</button>
+            <form>
+              <input type="search" placeholder="Search for district" id="search" onchange="openpage()">
+              <button type="submit">Search</button>
+               <script>
+                 function openpage(){
+                   var x=document.getElementById("search").value;
+                   if(x=="thiruvananthapuram" || x=="trivandrum"){
+                     window.open("tvm.html");
+                   }
+                   if(x=="kollam" || x=="quilon"){
+                     window.open("kollam.html")
+                   }
+                  if(x=="pathanamthitta"){
+                    window.open("pathanamthitta.html");
+                  }
+                  }
+               </script> 
             </form>
           </div>
         </div>
