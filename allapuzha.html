@@ -1,9 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="stylesheet" href="css/style.css">
     <title>Allapuzha</title>
 </head>
-<body >
+<body background="images/gettyimages-987190254-2048x2048.jpg">
+    <h1 style="padding-top:25px; color:white; font: size 100px;;"> Alapuzha</h1>
+    <p style="font-size:large; padding:25px; color: aliceblue;"> Alappuzha, also known by its former name Alleppey, is the administrative headquarters of Alappuzha district in the Indian state of Kerala. Alleppey is a city and a municipality in Kerala with an urban population of 174,164 and ranks third among the districts in literacy rate in the state. In 2016, the Centre for Science and Environment rated Alappuzha as the cleanest town in India.It is an important tourist destination in India. </p>
     
+    <figure>
+        <div class="row">
+            <div class="column">
+                <img src="images/allapuzha1.jpg" width="300" height="300" style="padding-left:20px;">
+                <figcaption style="font-size:large; font-weight:bold; color: black; padding-left:25px;">Allapuzha Beach</figcaption>
+            </div>
+            <div class="column">
+                <img src="images/allapuzha2.jpg" width="300" height="300">
+                <figcaption style="font-size:large; font-weight:bold;color:black;">Kuttanad</figcaption>
+             </div>
+             <div class="column">
+                 <img src="images/allapuzha3.jpg" width="300" height="300" style="padding-left:25px">
+                 <figcaption style="font-size:large; font-weight:bold; color:black; padding-left:25px;"> Lighthouse</figcaption>
+             </div>
+        </div>
+    </figure>
+    <style>
+        .column{
+            float: left;
+            width: 33.%;
+            padding: 40px;
+        }
+        .row::after{
+            content: "";
+            clear: both;
+            display: table;
+        }
+    </style>
 </body>
 </html>
